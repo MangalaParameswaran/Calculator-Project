@@ -1,7 +1,7 @@
 function calCulator(tagname,content,attrname,attrvalue,classvalue){
     let Container=document.createElement(tagname);
     Container.innerText=content;
-    Container.setAttribute(attrname,attrvalue,attrname,attrvalue)
+    Container.setAttribute(attrname,attrvalue)
     Container.classList.add(classvalue);
     return Container;
 };
