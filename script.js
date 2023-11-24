@@ -1,3 +1,4 @@
+window.alert("This calculates only if you handle with keyboards !!")
 function calCulator(tagname,content,attrname,attrvalue,classvalue){
     let Container=document.createElement(tagname);
     Container.innerText=content;
@@ -32,7 +33,7 @@ div1.append(div2);
 div2.append(input1,button1,button2,button3,button4,button5,button6,button7,button8,button9,button10,button11, button12,button13,button14,button15,button16,button17,button18,button19);
 document.body.append(div1);
 
-const buttons= document.querySelectorAll(".button,");
+const buttons= document.querySelectorAll(".button");
 buttons.forEach(button=>button.addEventListener("click",()=>fun(button.textContent)));
 function fun(num){
     input1.value += num;
@@ -49,31 +50,13 @@ function foo(){
         alert("only numbers are allowed");
     }
 }
-const clr=document.getElementsByClassName("button2");
-clr.addEventListener("click",clr());
-function clr(){
+const clr=document.querySelector(".button2");
+clr.addEventListener("click",clrFunction);
+function clrFunction(){
     input1.value = "";
 }
-const del=document.getElementsByClassName("button3");
-del.addEventListener("click",del)
-function del(){
+const del=document.querySelector(".button3");
+del.addEventListener("click",delFunction)
+function delFunction(){
     input1.value = input1.value.slice(0,-1)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
