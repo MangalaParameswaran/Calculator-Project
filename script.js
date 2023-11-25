@@ -1,4 +1,4 @@
-window.alert("This calculates only if you handle with keyboards !!")
+// window.alert("This calculates only if you handle with keyboards !!")
 function calCulator(tagname,content,attrname,attrvalue,classvalue){
     let Container=document.createElement(tagname);
     Container.innerText=content;
@@ -38,8 +38,8 @@ buttons.forEach(button=>button.addEventListener("click",()=>fun(button.textConte
 function fun(num){
     input1.value += num;
 }
-let data=["C","Del",".","*","7","8","9","/","4","5","6","-","1","2","3","+","0","00","="];
-fun(data);
+// let data=["C","Del",".","*","7","8","9","/","4","5","6","-","1","2","3","+","0","00","="];
+// fun(data);
 const eql=document.querySelector(".button1");
 eql.addEventListener("click",foo);
 function foo(){
